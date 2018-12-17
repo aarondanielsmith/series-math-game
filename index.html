@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Series</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Slab:100,400,700" rel="stylesheet">
+</head>
+<body>
+	<div id="ui">
+		<h1 id="game-header">Series</h1>
+		<div id="start" class="center-items">
+			<h2>Pick a number:</h2>
+			<input type="text" id="start-value"></input>
+			<a id="start-button" class="btn" href="javascript:;" onclick="startGame();">Start</a>
+			<a id="show-settings-button" class="btn" href="javascript:;" onclick="showSettings();">Settings</a>
+			<div id="score">
+				<div class="score-hdr">
+					<h2>Win</h2>
+					<p id="win-counter" class="score-num">0</p>
+				</div>
+				<div class="score-hdr">
+					<h2>Lose</h2>
+					<p id="lose-counter" class="score-num">0</p>
+				</div>
+			</div><!-- /score -->
+
+		</div>		
+		<div id="game">
+			<div id="display" class="center-items">
+				<span id="currentOperation"></span>
+			</div><!-- /display -->
+			<div id="user-input" class="center-items">
+				<input id="user-answer-text" type="text"></input>
+				<a id="user-answer-button" class="btn" href="javascript:;" onclick="submitAnswer();">Go</a>
+			</div><!-- /user-input -->
+		</div><!-- /game -->
+		<div id="settings" class="center-items">
+			<h2>Settings</h2>
+			<form>
+				<h3>Speed</h3>
+
+				<input type="radio" name="speed" value="1000" id="stg-hare"/>
+				<label for="stg-hare">Hare</label>
+				<input type="radio" name="speed" value="3000" id="stg-tortoise"/>
+				<label for="stg-tortoise">Tortoise</label>
+				<input type="radio" name="speed" value="5000" id="stg-sloth"/>
+				<label for="stg-sloth">Sloth</label>
+
+
+				<h3>Number of Steps</h3>
+
+				<input type="text" id="stg-steps" name="steps">
+
+				<a class="btn" href="javascript:;" onclick="saveSettings();">OK</a>
+				<a class="btn" href="javascript:;" onclick="showStart();">Cancel</a>
+			</form>
+		</div><!-- /settings -->
+		<div id="footer">
+		</div><!-- /footer -->
+	</div><!-- /ui -->
+
+	<footer></footer>
+
+	<script src="js/series.js" type="text/javascript"></script>
+	<script src="js/game.js" type="text/javascript"></script>
+	<script src="js/game_ui.js" type="text/javascript"></script>
+	<script src="js/settings.js" type="text/javascript"></script>
+</body>
+</html>

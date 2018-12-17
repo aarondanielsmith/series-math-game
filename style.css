@@ -1,0 +1,113 @@
+/***** Page Styles *****/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 90%;
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #3e3e3e;
+	position: relative;
+}
+
+#ui {
+	width: 100%;
+	max-width: 320px;
+	height: 480px;
+	margin: 10px auto 0;
+	border: 3px solid #80c4ff;
+	background-color: #fdfdfd;
+}
+
+#game,
+#user-input,
+#settings {
+	display: none;
+}
+
+#score {
+	width: 100%;
+	margin: 20px 0;
+	background-color: #333;
+	max-width: 320px;
+}
+
+/***** Element Styles *****/
+
+.btn {
+	border-radius: 3px;
+	background-color: #80c4ff;
+	display: inline-block;
+	padding: 10px 5px;
+	margin-top: 10px;
+	min-width: 120px;
+	text-align: center;
+	text-decoration: none;
+	color: #f8f8f8;
+}
+
+.center-items {
+	padding: 20px;
+	text-align: center;
+}
+
+#currentOperation {
+	display: block;
+	font-size: 72px;
+	font-weight: bold;
+	color: #80c4ff;
+}
+
+.score-hdr {
+	display: inline-block;
+	width: 49%;
+}
+
+.score-hdr h2,
+.score-num {
+	text-align: center;
+	margin: 0;
+}
+
+/***** Font Styles *****/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+div, p, span, input {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+}
+
+#game-header {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 4em;
+	margin: 16px 0;
+}
+
+input[type="text"] {
+	max-width: 90%;
+	padding: 12px;
+	font-size: 48px;
+	font-weight: 700;
+	text-align: center;
+}
+
+#score h2,
+#score p {
+	color: #efefef;
+}
+
+.score-hdr h2 {
+	font-size: 1.25em;
+	text-transform: uppercase;
+}
+
+.score-num {
+	font-weight: bold;
+	font-size: 1.25em;
+}
